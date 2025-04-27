@@ -1,0 +1,13 @@
+sau khi cài thư viện:
+
+CHẠY BE:
+
+cd face
+python api.py
+
+CHẠY FE:
+
+cd fe/vite-project
+npm install
+npm install axios
+npm run dev
