@@ -1,10 +1,12 @@
+Flask
+Flask-Cors
+mediapipe
+face_recognition
 opencv-python
 easyocr
 numpy
 pillow
 torch
 torchvision
-face-recognition
 pymongo
-mediapipe
 pytesseract
