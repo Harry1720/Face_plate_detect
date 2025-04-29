@@ -9,11 +9,13 @@ Bước 5. Mở một Terminal mới trên VSCode và kiểm tra phiên bản Py
 Bước 6. Cài đặt môi trường ảo để cài thư viện bằng lệnh "python -m venv .venv"
 Bước 7. Kích hoạt môi trường ảo dùng lệnh ".venv/Scripts/activate"
 
-
 Bước 8. Cài đặt các thư viện cần thiết. 
 Do face_recognition trong dự án không hỗ  trợ trên window nên phải cài thêm cmake và dlib (vui lòng cài theo thứ tự)
 Bước 8.1 cài đặt tay theo tuần tự các thư viện "pip install cmake" 
 Bước 8.2 cài đặt tay theo tuần tự các thư viện "pip install dlib wheel"
+Nếu bị lỗi cài wheel. ta có thể sử dụng cách sau:
++ tải file wheel qua đường dẫn https://github.com/Murtaza-Saeed/Dlib-Precompiled-Wheels-for-Python-on-Windows-x64-Easy-Installation/blob/master/dlib-19.24.1-cp311-cp311-win_amd64.whl (dùng cho Python 3.11 trên Windows 64-bit)
++ Cài đặt: pip install đường\dẫn\đến\dlib-19.24.6-cp311-cp311-win_amd64.whl
 Bước 8.3 chạy lệnh "pip install -r requirements.txt" để cài đặt các thư viện còn lại 
 Bạn có thể dùng pip show cmake để kiểm tra cài đặt
 
@@ -22,7 +24,6 @@ Bước 9. Cài đặt các thư viện cho FE
 9.2. Tải npm install
 9.3. Tải npm install axios
 9.4. npm install react-router-dom
-
 
 Bước 10. Mở Terminal ở 2 cửa sổ 
 Bước 11. Ở terminal FE "cd fe/vite-project" và "npm run dev"

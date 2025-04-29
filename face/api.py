@@ -27,8 +27,8 @@ checkin_module = load_module("./checkin2.py", "checkin2")
 checkout_module = load_module("./Checkout.py", "Checkout")
 
 # Camera setup
-cap_face = cv2.VideoCapture(1)
-cap_plate = cv2.VideoCapture(0)
+cap_face = cv2.VideoCapture(0)
+cap_plate = cv2.VideoCapture(1)
 
 if not cap_face.isOpened() or not cap_plate.isOpened():
     print("Error: Could not open one or both cameras.")
