@@ -1,7 +1,7 @@
 # Dự án Face Plate Detect
 
 ## Giới thiệu
-Dự án **Face Plate Detect** là một ứng dụng sử dụng công nghệ nhận diện biển số xe đi kèm với  khuôn mặt để làm nền tảng cho hệ thống bãi giữ xe thông minh, không cần sử dụng thẻ từ như các bãi xe hiện hành. Dự án này chỉ ở mức demo đơn giản.
+Dự án **Face Plate Detect** là một ứng dụng sử dụng công nghệ nhận diện biển số xe đi kèm với khuôn mặt để làm nền tảng cho hệ thống bãi giữ xe thông minh, không cần sử dụng thẻ từ như các bãi xe hiện hành. Dự án này chỉ ở mức demo đơn giản.
 
 ## Cách sử dụng
 Các bước cài đặt thư viện trên hệ điều hành Windows: (Đối với bước 1, 2 nếu đã thực hiện có thể bỏ qua).
@@ -19,17 +19,17 @@ Sau khi cài đặt, tìm edit the system environment variables => Environment V
 - **Bước 9:** Cài đặt môi trường ảo để cài thư viện bằng lệnh "python -m venv .venv".
 - **Bước 10:** Kích hoạt môi trường ảo dùng lệnh ".venv/Scripts/activate"
 - **Bước 11:** Cài đặt các thư viện cần thiết. Do phần nhận diện khuôn mặt trong dự án không hỗ trợ trên window nên phải cài thêm cmake và dlib.
-+ ***Bước 11.1:*** cài đặt tay theo tuần tự các thư viện "pip install cmake" 
-+ ***Bước 11.2:*** cài đặt tay theo tuần tự các thư viện "pip install dlib wheel". Nếu bị lỗi cài wheel, ta có thể sử dụng cách sau:
-- [x] Tải file wheel qua đường dẫn https://github.com/Murtaza-Saeed/Dlib-Precompiled-Wheels-for-Python-on-Windows-x64-Easy-Installation/blob/master/dlib-19.24.1-cp311-cp311-win_amd64.whl (dùng cho Python 3.11 trên Windows 64-bit)
-- [x] Cài đặt: pip install đường\dẫn\đến\dlib-19.24.6-cp311-cp311-win_amd64.whl
-+ ***Bước 11.3:*** chạy lệnh "pip install -r requirements.txt" để cài đặt các thư viện còn lại 
-Có thể dùng pip show <tên_thư_viện> để kiểm tra cài đặt.
+  + ***Bước 11.1:*** cài đặt tay theo tuần tự các thư viện "pip install cmake" 
+  + ***Bước 11.2:*** cài đặt tay theo tuần tự các thư viện "pip install dlib wheel". Nếu bị lỗi cài wheel, ta có thể sử dụng cách sau:
+    - Tải file wheel qua đường dẫn https://github.com/Murtaza-Saeed/Dlib-Precompiled-Wheels-for-Python-on-Windows-x64-Easy-Installation/blob/master/dlib-19.24.1-cp311-cp311-win_amd64.whl (dùng cho Python 3.11 trên Windows 64-bit)
+    - Cài đặt: pip install đường\dẫn\đến\dlib-19.24.6-cp311-cp311-win_amd64.whl
+  + ***Bước 11.3:*** chạy lệnh "pip install -r requirements.txt" để cài đặt các thư viện còn lại 
+  - Có thể dùng pip show <tên_thư_viện> để kiểm tra cài đặt.
 - **Bước 12:** Cài đặt các thư viện cho FE 
-- [x] Mở terminal mới và chuyển folder cd fe/vite-project
-- [x] Gõ lệnh npm install
-- [x] Tiếp tục gõ lệnh npm install axios
-- [x] Cuối cùng là npm install react-router-dom
+  - Mở terminal mới và chuyển folder cd fe/vite-project
+  - Gõ lệnh npm install
+  - Tiếp tục gõ lệnh npm install axios
+  - Cuối cùng là npm install react-router-dom
 - **Bước 13:** Mở 2 terminal, tạm gọi là terminal FE và terminal BE.
 - **Bước 14:** Ở terminal FE gõ "cd fe/vite-project", sau đó là "npm run dev". Cuối cùng nhấn đường dẫn trên terminal để chạy FE.
 - **Bước 15:** Ở terminal BE gõ ".venv/Scripts/activate", sau đó gõ "cd face", rồi gõ "python api.py" để chạy BE.
